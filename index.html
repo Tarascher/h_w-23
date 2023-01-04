@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="./assets/js/app.js"></script>
+  </head>
+  <body onload="calc()">
+    <div class="container border mt-5" style="width: 35rem">
+      <div>
+        <h2>Угадай число от 1 и до 100</h2>
+      </div>
+      <div>
+        <h2>Осталось попыток : <output id="resultCount">-</output></h2>
+      </div>
+    </br>
+</br>
+<div class="alert alert-danger text-center" role="alert">
+    <output id="infotInputInfo2">-</output> 
+  </div>
+</br>
+
+      <form class="d-flex">
+        <span class="input-group-text" id="basic-addon1" style="width: 150px"
+          >ваш вариант
+        </span>
+        <input
+          
+          class="form-control me-2"
+          type="number"
+          placeholder="Search"
+          aria-label="Search"
+          id="numberInput"
+          min="0" max="100" value="50"
+        />
+        <button onclick="calc()" type="button" class="btn btn-success" style="width: 200px">
+          Дать ответ
+        </button>
+      </form>
+      
+      <div class="alert alert-secondary text-center" role="alert">
+        ваш вариант :  <output id="resultInput">-</output>  ,</br>  <output id="infotInputInfo">-</output>  
+      </div>
+    </div>
+  </body>
+</html>
